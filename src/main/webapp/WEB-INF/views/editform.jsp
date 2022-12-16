@@ -28,7 +28,11 @@
   <tr><td>ClassHour:</td><td><form:input path ="ClassHour"/></td></tr>
   <tr><td>LectureIntro:</td><td><form:textarea cols="50" rows="5" path="LectureIntro"/></td></tr>
   <tr><td>ClassCapacity:</td><td><form:input path ="ClassCapacity"/></td></tr>
-  <tr><td>Credit:</td><td><form:input path ="Credit"/></td></tr>
+  <tr><td>Credit:</td><td><select name="Credit">
+   <option value="3"> 3
+   <option value="2"> 2
+   <option value="1" selected> 1
+   </select>
  </table>
  <input type="submit" value="수정하기"/>
  <input type="button" value="취소하기" onclick="history.back()"/>
