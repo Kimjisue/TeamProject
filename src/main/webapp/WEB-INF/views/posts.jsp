@@ -46,23 +46,29 @@
 <%--%>--%>
 <table id="list" width="90%">
 <tr>
-	<th>Id</th>
-	<th>Title</th>
-	<th>Writer</th>
-	<th>Content</th>
-	<th>Regdate</th>
+	<th>Subjectcode</th>
+	<th>Course</th>
+	<th>Professor</th>
+	<th>Classroom</th>
+	<th>ClassHour</th>
+	<th>LectureIntro</th>
+	<th>ClassCapacity</th>
+	<th>Credit</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
 <c:forEach items="${posts}" var="u">
 	<tr>
-		<td>${u.getSeq()}</td>
-		<td>${u.getTitle()}</td>
-		<td>${u.getWriter()}</td>
-		<td>${u.getContent()}</td>
-		<td>${u.getRegdate()}</td>
-		<td><a href="editform/${u.seq}">Edit</a></td>
-		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
+		<td>${u.getSubjectCode()}</td>
+		<td>${u.getCourse()}</td>
+		<td>${u.getProfessor()}</td>
+		<td>${u.getClassroom()}</td>
+		<td>${u.getClassHour()}</td>
+		<td>${u.getLectureIntro()}</td>
+		<td>${u.getClassCapacity()}</td>
+		<td>${u.getCredit()}</td>
+		<td><a href="editform/${u.SubjectCode}">Edit</a></td>
+		<td><a href="javascript:delete_ok('${u.getSubjectCode()}')">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>

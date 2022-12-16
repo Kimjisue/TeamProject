@@ -1,8 +1,14 @@
 package com.mycom.myapp;
 
-import java.util.Date;
-
 public class BoardVO {
+	public int getSubjectCode() {
+		return SubjectCode;
+	}
+
+	public void setSubjectCode(int subjectCode) {
+		SubjectCode = subjectCode;
+	}
+
 	private int SubjectCode;
 
 	private String Course;
@@ -13,13 +19,7 @@ public class BoardVO {
 	private int ClassCapacity;
 	private int Credit;
 
-	public int getSubjectCode() {
-		return SubjectCode;
-	}
 
-	public void setSubjectCode(int SubjectCode) {
-		SubjectCode = SubjectCode;
-	}
 
 	public String getCourse() {
 		return Course;
