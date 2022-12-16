@@ -20,11 +20,15 @@
 <%--@elvariable id="boardVO" type=""--%>
 <%--@elvariable id="u" type=""--%>
 <form:form modelAttribute="u" method="POST" action="../editok">
-  <form:hidden path="seq"/>
+  <form:hidden path="subjectCode"/>
  <table id="edit">
-  <tr><td>Title:</td><td><form:input path ="title"/></td></tr>
-  <tr><td>Writer:</td><td><form:input path ="writer"/></td></tr>
-  <tr><td>Content:</td><td><form:textarea cols="50" rows="5" path="content"/></td></tr>
+  <tr><td>Course:</td><td><form:input path ="Course"/></td></tr>
+  <tr><td>Professor:</td><td><form:input path ="Professor"/></td></tr>
+  <tr><td>Classroom:</td><td><form:input path ="Classroom"/></td></tr>
+  <tr><td>ClassHour:</td><td><form:input path ="ClassHour"/></td></tr>
+  <tr><td>LectureIntro:</td><td><form:textarea cols="50" rows="5" path="LectureIntro"/></td></tr>
+  <tr><td>ClassCapacity:</td><td><form:input path ="ClassCapacity"/></td></tr>
+  <tr><td>Credit:</td><td><form:input path ="Credit"/></td></tr>
  </table>
  <input type="submit" value="수정하기"/>
  <input type="button" value="취소하기" onclick="history.back()"/>
