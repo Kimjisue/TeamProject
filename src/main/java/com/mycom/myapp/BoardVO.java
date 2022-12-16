@@ -17,8 +17,8 @@ public class BoardVO {
 		return SubjectCode;
 	}
 
-	public void setSubjectCode(int subjectCode) {
-		SubjectCode = subjectCode;
+	public void setSubjectCode(int SubjectCode) {
+		SubjectCode = SubjectCode;
 	}
 
 	public String getCourse() {

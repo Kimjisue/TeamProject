@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="board">
+<mapper namespace="Board">
     <insert id="insertBoard">
-        insert into Hiservice1 (Course,Professor, Classroom, ClassHour, LectureIntro, ClassCapacity, Credit)
-        values
-        (#{Course} , #{Professor} , #{Classroom},#{ClassHour},#{LectureIntro},#{ClassCapacity},#{Credit})
+        insert into Hiservice1(Course,Professor, Classroom, ClassHour, LectureIntro, ClassCapacity, Credit) values(#{Course} , #{Professor} , #{Classroom},#{ClassHour},#{LectureIntro},#{ClassCapacity},#{Credit})
     </insert>
     <update id="updateBoard">
-        update Hiservice1
-        set Course=#{Course},Professor=#{Professor}, Classroom=#{Classroom}, ClassHour=#{ClassHour}, LectureIntro=#{LectureIntro}, ClassCapacity=#{ClassCapacity}, Credit=#{Credit}
-        where SubjectCode=#{SubjectCode}
+        update Hiservice1 set Course= #{Course},Professor= #{Professor}, Classroom= #{Classroom}, ClassHour= #{ClassHour}, LectureIntro= #{LectureIntro}, ClassCapacity= #{ClassCapacity}, Credit= #{Credit} where SubjectCode= #{SubjectCode}
     </update>
     <delete id="deleteBoard">
-        delete from Hiservice1 where SubjectCode=#{SubjectCode}
+        delete from Hiservice1 where SubjectCode= #{SubjectCode}
     </delete>
     <select id="getBoard" resultType="board">
-        select * from Hiservice1 where SubjectCode=#{SubjectCode}
+        select * from Hiservice1 where SubjectCode= #{SubjectCode}
     </select>
     <select id="getBoardList" resultType="board">
         select * from Hiservice1 order by SubjectCode desc
