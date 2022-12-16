@@ -67,7 +67,7 @@
 		<td>${u.getLectureIntro()}</td>
 		<td>${u.getClassCapacity()}</td>
 		<td>${u.getCredit()}</td>
-		<td><a href="editform/${u.SubjectCode}">Edit</a></td>
+		<td><a href="editform/${u.subjectCode}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSubjectCode()}')">Delete</a></td>
 	</tr>
 </c:forEach>
